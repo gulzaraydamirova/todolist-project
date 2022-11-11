@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background: linear-gradient(to right, #8052ec, #dfd489);
+}
+
+.container {
+  border: 1px solid #c4c4c4;
+  width: 20%;
+  min-width: 336px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.541);
+  min-height: 236px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  min-width: 334px;
+  height: 30px;
+  position: absolute;
+  background: #ffdc40;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  margin-bottom: 10px;
+}
+
+.text-div {
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  font-size: 24px;
+  top: 60px;
+}
+
+.sortdown {
+  display: block;
+  position: relative;
+  top: 75px;
+  margin-left: 85%;
+}
+
+.sortdown:hover .svgdown {
+  fill: #5330a4;
+}
+.sortup:hover .svgdown {
+  fill: #5330a4;
+}
+.sortup {
+  display: block;
+  position: relative;
+  top: 75px;
+  margin-left: 85%;
+}
+
+.off {
+  display: none;
+}
+
+#push {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#push:hover .pushclr {
+  fill: #5330a4;
+}
+
+#pushlist {
+  position: relative;
+  border: 1px solid #c4c4c4;
+  width: 85%;
+  min-width: 286px;
+  min-height: 40px;
+  border-radius: 10px;
+  top: 90px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.inptdiv {
+  position: relative;
+  display: flex;
+  height: 25px;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.inptdiv input {
+  outline: none;
+  border: none;
+  width: 80%;
+}
+
+.closebtn:hover {
+  fill: #5330a4;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(93, 213, 93);
+  cursor: pointer;
+}
+
+.task {
+  cursor: pointer;
+}
+
+.todotask {
+  max-width: 95%;
+}
